@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e0e5ec;
+  animation: backgroundChange 10s infinite alternate;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes backgroundChange {
+  0% { background-color: #e0e5ec; }
+  100% { background-color: #a8b2d1; }
+}
+
+.dynamic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f3f7;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #becde2, -10px -10px 20px #ffffff;
+  padding: 20px;
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.dynamic-card:hover {
+  transform: translateY(-10px);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  margin-top: -60px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-info {
+  background: #010448;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: inset 5px 5px 10px #000036, inset -5px -5px 10px #02055a;
+  margin-top: -40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-top: 5px;
+  color: #dcd7a0;
+}
+
+.career-highlights {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.about-me {
+  text-align: left;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 5px;
+}
+
+.social-media a i {
+  font-size: 24px;
+}
+/* Add this CSS below your existing styles */
+
+.skills,
+.education,
+.contact-info,
+.projects {
+  margin-top: 20px;
+}
+
+.skills ul,
+.education p,
+.contact-info p,
+.projects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills ul li,
+.education p,
+.contact-info p {
+  margin-top: 5px;
+  color: #dcd7a0;
+}
+
+.projects ul li {
+  margin-top: 5px;
+}
+
+.projects ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.projects ul li a:hover {
+  color: #0056b3;
+}
